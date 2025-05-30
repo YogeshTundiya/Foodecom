@@ -9,6 +9,7 @@ import Menu from './Pages/Home/Menu'
 import Offers from './Pages/Home/Offers'
 import Restaurants from './Pages/Home/Restaurants'
 import Track from './Pages/Home/Track'
+import Footer from './Components/Footer/index'
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
       <Route path='restaurant' element={<Restaurants/>}/>
       <Route path='trackorder' element={<Track/>}/>
     </Routes>
+    <Footer/>
     </BrowserRouter>
     </>
   )

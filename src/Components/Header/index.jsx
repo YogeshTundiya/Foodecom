@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaMapMarkerAlt, FaShoppingCart, FaChevronDown } from 'react-icons/fa';
-import Logo from '../../images/Logo.jpeg';
+// import Logo from '../../images/Logo.jpeg';
 import { Link } from 'react-router-dom';
 
 export default function Header() {
