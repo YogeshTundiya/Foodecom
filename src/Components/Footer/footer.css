@@ -13,10 +13,11 @@
 .footer-container {
     /* display: flex;
     flex-wrap: wrap; */
-  padding: min(1em, 8%);
+
+  padding: min(2em, 8%);
   display: grid;
   column-gap: 10px;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
   justify-content: space-between;
 }
 

@@ -35,7 +35,7 @@ export default function Navbar() {
                         ))}
                     <div className="reg_btn nav-buttons d-flex align-items-center gap-3">
                         <img src={usr} alt="user" />
-                        <Link to="/Login" style={{textDecoration:'none', color:'#FFFFFF', fontSize:'12px'}}>Login/Signup</Link>
+                        <Link to="/login" style={{textDecoration:'none', color:'#FFFFFF', fontSize:'12px'}}>Login/Signup</Link>
                     </div>
                     </div> 
                 </div>
