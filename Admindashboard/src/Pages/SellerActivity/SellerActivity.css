@@ -1,0 +1,23 @@
+.seller-activity-page {
+  padding: 20px;
+}
+
+.seller-activity-page h1 {
+  margin-bottom: 20px;
+}
+
+.seller-activity-page table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.seller-activity-page th,
+.seller-activity-page td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.seller-activity-page th {
+  background-color: #f2f2f2;
+}

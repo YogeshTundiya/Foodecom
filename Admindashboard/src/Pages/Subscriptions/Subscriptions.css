@@ -1,0 +1,76 @@
+.subscriptions-page {
+  padding: 20px;
+}
+
+.subscriptions-page h1 {
+  margin-bottom: 20px;
+}
+
+.plans-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+}
+
+.plan-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px; /* Adjust as needed */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.plan-card h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.plan-card .price {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #007bff;
+  margin: 10px 0;
+}
+
+.plan-card h3 {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 1.1em;
+}
+
+.plan-card ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.plan-card li {
+  margin-bottom: 5px;
+}
+
+.plan-card button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.plan-card button:hover {
+  background-color: #0056b3;
+}
+
+/* Optional: Add some distinct styling for different plans */
+.plan-basic {
+  border-top: 5px solid #007bff;
+}
+
+.plan-premium {
+  border-top: 5px solid #28a745;
+}
+
+.plan-enterprise {
+  border-top: 5px solid #dc3545;
+}

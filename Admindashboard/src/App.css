@@ -1,42 +1,52 @@
+/* App.css - Minimal admin-specific styles */
+
+/* Ensure the root element takes full height and allows flex layout if needed by App.jsx */
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  /* display: flex; // This is also in Admindashboard/src/index.css, potentially redundant */
+  /* min-height: 100vh; // This is also in Admindashboard/src/index.css */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.app-container {
+  display: flex; /* Assuming the main app structure still needs this */
+  width: 100%;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Basic sidebar structure if still used, otherwise remove */
+.sidebar {
+  width: 220px; /* Example: adjust or remove */
+  padding: 1rem;
+  /* background-color: #f8f9fa; // Rely on root styles or remove */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-.card {
-  padding: 2em;
+.sidebar a {
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem 0;
+  /* color: #007bff; // Rely on root styles */
 }
 
-.read-the-docs {
-  color: #888;
+.sidebar a.active {
+  font-weight: bold;
+  /* color: #0056b3; // Rely on root styles */
+}
+
+/* Basic content area structure */
+.content {
+  margin-left: 220px; /* Adjust if sidebar width changes or remove if layout changes */
+  padding: 1rem;
+  flex-grow: 1;
+}
+
+/* Minimal logout button styling, or remove to use default button styles */
+.logout-button {
+  /* Styles removed to rely on default button styling from root index.css */
+  /* Add back minimal styling if needed, e.g., margin */
+  margin-top: 1rem;
+  display: block; /* Or inline-block as appropriate */
+  width: auto; /* Let the content decide the width */
 }

@@ -1,0 +1,29 @@
+.sellers-page {
+  padding: 20px;
+}
+
+.sellers-page h1 {
+  margin-bottom: 20px;
+}
+
+.sellers-page table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.sellers-page th,
+.sellers-page td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.sellers-page th {
+  background-color: #f2f2f2;
+}
+
+.sellers-page button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
