@@ -1,0 +1,60 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full viewport height */
+  padding: 20px; /* Keep padding for spacing */
+  /* background-color removed to inherit from body or root styles */
+}
+
+.login-form {
+  /* background-color, padding, border-radius, box-shadow removed */
+  width: 100%;
+  max-width: 400px; /* Max width for the form can be kept for structure */
+  text-align: center; /* Or left, depending on desired default */
+  padding: 2rem; /* Add some padding for spacing if needed */
+  border: 1px solid #ccc; /* Optional: a light border for definition */
+  border-radius: 8px; /* Optional: rounded corners */
+}
+
+.login-form h2 {
+  margin-bottom: 1.5rem;
+  /* color and font-size removed to inherit */
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  /* color and font-weight removed to inherit */
+}
+
+/* Input and button styles will primarily come from the root index.css */
+/* Specific adjustments can be made if defaults are not suitable */
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+  width: 100%;
+  /* padding, border, border-radius, box-sizing, font-size removed */
+  /* Focus styles also removed to rely on defaults */
+}
+
+.login-button {
+  width: 100%;
+  /* padding, background-color, color, border, border-radius, font-size, font-weight removed */
+  /* Hover styles also removed */
+}
+
+.error-message {
+  /* color, background-color, border, padding, border-radius removed */
+  /* Rely on a global error styling or add very minimal styling */
+  margin-bottom: 1rem;
+  text-align: center;
+  padding: 0.5rem;
+  border: 1px solid red; /* Example minimal error indication */
+  color: red;
+}
