@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
 /* ==== RESET & BASE ==== */
 * {
@@ -6,15 +6,58 @@
   padding: 0;
   box-sizing: border-box;
 }
-:root{
-    --dark-blue: #03081F;
-    --yellow: #FC8A06;
+:root {
+  --dark-blue: #03081f;
+  --yellow: #fc8a06;
+
+  /* Light Theme */
+  --background-color-light: #ffffff;
+  --text-color-light: #03081f;
+  --header-bg-light: #ffffff;
+  --navbar-bg-light: #ffffff;
+  --footer-bg-light: #03081f;
+  --card-bg-light: #ffffff;
+  --border-color-light: #e2e2e2;
+
+  /* Dark Theme */
+  --background-color-dark: #1a1a1a;
+  --text-color-dark: #f0f0f0;
+  --header-bg-dark: #2c2c2c;
+  --navbar-bg-dark: #2c2c2c;
+  --footer-bg-dark: #1a1a1a;
+  --card-bg-dark: #333333;
+  --border-color-dark: #555555;
 }
-html, body, #root {
+
+body[data-theme="light"] {
+  --background-color: var(--background-color-light);
+  --text-color: var(--text-color-light);
+  --header-bg: var(--header-bg-light);
+  --navbar-bg: var(--navbar-bg-light);
+  --footer-bg: var(--footer-bg-light);
+  --card-bg: var(--card-bg-light);
+  --border-color: var(--border-color-light);
+}
+
+body[data-theme="dark"] {
+  --background-color: var(--background-color-dark);
+  --text-color: var(--text-color-dark);
+  --header-bg: var(--header-bg-dark);
+  --navbar-bg: var(--navbar-bg-dark);
+  --footer-bg: var(--footer-bg-dark);
+  --card-bg: var(--card-bg-dark);
+  --border-color: var(--border-color-dark);
+}
+
+html,
+body,
+#root {
   height: 100%;
-  font-family: 'Poppins', sans-serif;
-  background-color: #FFFFFF;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
   overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* ==== GLOBAL LAYOUT WRAPPER ==== */
@@ -35,13 +78,13 @@ html, body, #root {
   justify-content: space-between;
   width: 100%;
   margin: 0;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .navlinks .nav-item {
   font-weight: 500;
   font-size: 15px;
-  color: #03081F;
+  color: #03081f;
   text-decoration: none;
   padding: 6px 18px;
   transition: 0.2s ease;
@@ -56,13 +99,13 @@ html, body, #root {
 
 .navlinks .nav-item.active {
   background-color: #f7931e;
-  color: #FFFFFF;
+  color: #ffffff;
   border-radius: 20px;
 }
 
 .reg_btn {
-  background-color: #03081F;
-  color: #FFFFFF;
+  background-color: #03081f;
+  color: #ffffff;
   padding: 6px 18px;
   border-radius: 20px;
   text-decoration: none;
@@ -71,7 +114,7 @@ html, body, #root {
 
 /* ==== HOME SECTION ==== */
 .Home {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   width: 98vw;
   margin: 20px auto;
   border-radius: 12px;
@@ -128,11 +171,11 @@ html, body, #root {
 .top-deals-header h3 {
   font-size: 24px;
   font-weight: 600;
-  color: #03081F;
+  color: #03081f;
 }
 
 .top-deals-header h3 span {
-  color: #FC8A06;
+  color: #fc8a06;
 }
 
 .category-tabs {
@@ -143,19 +186,19 @@ html, body, #root {
 
 .category-tabs button {
   padding: 8px 16px;
-  border: 1px solid #FC8A06;
+  border: 1px solid #fc8a06;
   background: transparent;
   border-radius: 25px;
   font-size: 14px;
   font-weight: 500;
-  color: #03081F;
+  color: #03081f;
   cursor: pointer;
   transition: 0.3s;
 }
 
 .category-tabs button.active,
 .category-tabs button:hover {
-  background-color: #FC8A06;
+  background-color: #fc8a06;
   color: white;
 }
 
@@ -234,7 +277,7 @@ html, body, #root {
 .popular-categories h3 {
   font-size: 24px;
   font-weight: 600;
-  color: #03081F;
+  color: #03081f;
   margin-bottom: 30px;
 }
 
@@ -252,11 +295,11 @@ html, body, #root {
   /* text-align: center; */
   transition: transform 0.3s;
   cursor: pointer;
-  border: 1px solid #F5F5F5;
-  background: #F5F5F5;
+  border: 1px solid #f5f5f5;
+  background: #f5f5f5;
   border-radius: 12px;
 }
-.category_text{
+.category_text {
   padding-left: min(12px, 3%);
   padding-bottom: min(12px, 3%);
 }
@@ -274,7 +317,7 @@ html, body, #root {
 
 .category-card h5 {
   font-size: 15px;
-  color: #03081F;
+  color: #03081f;
   margin: 5px 0;
   font-weight: 500;
 }
