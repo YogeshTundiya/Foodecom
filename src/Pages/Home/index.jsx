@@ -10,6 +10,12 @@ import cat3 from "../../images/cat3.png";
 import cat4 from "../../images/cat4.png";
 import cat5 from "../../images/cat5.png";
 import cat6 from "../../images/cat6.png";
+import McD from "../../images/McD.png";
+import papajohn from "../../images/Papajohns.png";
+import kfc from "../../images/KFC.png";
+import texasChicken from "../../images/Tex.png";
+import burgerKing from "../../images/Bking.png";
+import shaurma from "../../images/shaurma.png";
 
 const deals = [
   {
@@ -54,7 +60,14 @@ const categorie = [
   { name: "Breakfast", restaurants: 4, img: cat5 },
   { name: "Soups", restaurants: 32, img: cat6 },
   { name: "Hello", restaurants: 2, img: cat6 },
-
+];
+const restaurants = [
+  { name: "McDonald's London", img: McD },
+  { name: "Papa Johns", img: papajohn },
+  { name: "KFC West London", img: kfc },
+  { name: "Texas Chicken", img: texasChicken },
+  { name: "Burger King", img: burgerKing },
+  { name: "Shaurma 1", img: shaurma },
 ];
 
 export default function Home() {
@@ -133,9 +146,17 @@ export default function Home() {
         </div>
       </div>
 
-        {/* === Popular Restaurants Section === */}
+      {/* === Popular Restaurants Section === */}
       <div className="popular_restaurants">
-        
+        <h3>Popular Restaurants</h3>
+        <div className="restaurant-grid">
+          {restaurants.map((res, index) => (
+            <div className="restaurant-card" key={index}>
+              <img src={res.img} alt={res.name} />
+              <p>{res.name}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </>
   );
